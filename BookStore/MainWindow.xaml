@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BookStore"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="MainWindow" Height="300" Width="500">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Label Content="Окно приветствия!"/>
+        <Label Content="BookStore"/>
+        <Label Content="Книжный Магазин"/>
+        <Label Content="учебный проект"/>
+        <Button Content="Autorisation" Click="Button_Click"/>
+        <Button Content="App" Click="Button_Click_1"/>
+    </StackPanel>
 </Window>

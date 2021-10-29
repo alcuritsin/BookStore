@@ -16,31 +16,13 @@ using System.Windows.Shapes;
 namespace BookStore
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for DB.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class DB : Page
     {
-
-        public MainWindow()
+        public DB()
         {
             InitializeComponent();
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            var win = new Window_Autorisation();
-
-            win.Show();
-            Close();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            var win = new Window_App();
-
-            win.Show();
-            Close();
         }
     }
 }

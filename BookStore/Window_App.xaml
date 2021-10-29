@@ -1,0 +1,46 @@
+﻿<Window x:Class="BookStore.Window_App"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookStore"
+        mc:Ignorable="d"
+        Title="Window_App" Height="450" Width="800">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+
+        <Menu Grid.Column="0">
+            <Menu.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <VirtualizingStackPanel Orientation="Vertical">
+
+                    </VirtualizingStackPanel>
+                </ItemsPanelTemplate>
+            </Menu.ItemsPanel>
+
+            <MenuItem x:Name="MenuItem_Hide"
+                      Header="Hide"
+                      Click="MenuItem_Hide_Click"/>
+            <MenuItem x:Name="MenuItem_Store"
+                      Header="Store"
+                      Click="MenuItem_Store_Click"/>
+            <MenuItem x:Name="MenuItem_DB"
+                      Header="DB"
+                      Click="MenuItem_DB_Click"/>
+            <MenuItem x:Name="MenuItem_Setting"
+                      Header="Setting"
+                      Click="MenuItem_Setting_Click"/>
+            <MenuItem x:Name="MenuItem_About"
+                      Header="About"
+                      Click="MenuItem_About_Click"/>
+            
+        </Menu>
+
+        <Frame x:Name="Frame_App"
+               Grid.Column="1"/>
+    </Grid>
+</Window>
