@@ -24,7 +24,7 @@
 
             <Label Content="Password:"
                    Grid.Row="1" Grid.Column="0"/>
-            
+
             <Grid Grid.Row="1" Grid.Column="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="4*"/>
@@ -37,12 +37,47 @@
                     Grid.Row="1"/>
                 <Button Content="*/s"
                     Grid.Column="1"/>
-                
+
             </Grid>
         </Grid>
 
         <Button Content="Enter"/>
         <Button Content="Cancel"/>
+
+        <!-- SQL host-->
+        <Label Content="Настройка MySQl" HorizontalAlignment="Center"/>
+        <Button Content="default"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <Label Content="Server:"
+                   Grid.Row="0" Grid.Column="0"/>
+            <Label Content="Login:"
+                   Grid.Row="1" Grid.Column="0"/>
+            <Label Content="Password:"
+                   Grid.Row="2" Grid.Column="0"/>
+            <Label Content="User:"
+                   Grid.Row="3" Grid.Column="0"/>
+
+            <TextBox x:Name="TextBox_SQL_Host" Grid.Row="0" Grid.Column="1"/>
+            <TextBox x:Name="TextBox_SQL_Login" Grid.Row="1" Grid.Column="1"/>
+            <TextBox x:Name="TextBox_SQL_PW" Grid.Row="2" Grid.Column="1"/>
+            <TextBox x:Name="TextBox_SQL_User" Grid.Row="3" Grid.Column="1"/>
+
+        </Grid>
+
+        <Button Content="Test connection"/>
+        
 
     </StackPanel>
 </Window>
